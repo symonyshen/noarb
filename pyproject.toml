@@ -1,0 +1,22 @@
+[project]
+name = "noarb"
+version = "0.1.0"
+description = "LP-based detection of static arbitrage in vanilla options + futures"
+readme = "README.md"
+authors = [
+    { name = "Maksym Symonyshen", email = "symonyshen@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.5.3",
+    "scipy>=1.18.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
